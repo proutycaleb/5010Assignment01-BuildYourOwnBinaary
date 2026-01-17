@@ -41,4 +41,5 @@ The command for our ant looks like this:
 >1000 0000 1010 1010 1010 0010 0010 0010
 
 And here's what it looks like drawn out:
+
 ![binaryAnt](binaryAnt.png)
