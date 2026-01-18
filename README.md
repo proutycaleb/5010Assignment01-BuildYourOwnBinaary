@@ -2,6 +2,8 @@
 
 ## Spider, Ant, Centipede
 
+### Rules
+
 A Spider, Ant, Centipede creauree is represented by three details
 1. How many torsos they have
 2. How many legs they have
@@ -21,6 +23,9 @@ Legs are represneted by a four bit string
 
 Finally, we have a set of four bit strings to indicate where the legs should be placed.
 
+**The number of four bit strings should be equivalent to the number of legs designated in the previous string**
+>0110 is equal to five, so we should have five four-bit strings, one for each leg
+
 The first bit in the string represents what side of the torso the leg is on
 >1000 (top/left side of the first torso)
 >
@@ -31,12 +36,14 @@ The next three bits show which torso to place the leg on
 >
 >0011 (right/botom of the 3rd torso)
 
+### Example
+
 For an example well make an ant. They have three torsos (head, thorax, abdomen) and eight legs (six on the thoeax, and two on the head as an antenna. Our ant will face towards the left
 
 The command for our ant looks like this:
 >011
 >
->0100
+>1000
 >
 >1000 0000 1010 1010 1010 0010 0010 0010
 
